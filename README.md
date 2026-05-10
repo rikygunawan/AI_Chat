@@ -15,3 +15,6 @@ npm install = untuk node modules
 npm install lucide-react = Untuk ikon chat, kirim, dan bot
 
 npm install ollama = untuk package ollama
+
+<img width="439" height="652" alt="MAI" src="https://github.com/user-attachments/assets/4f7b4f07-bf34-4a3f-ad4a-560bb3dbcebd" />
+
