@@ -8,7 +8,7 @@ jika mau dari PC sendiri atau offline download otak terlebih dahulu di https://o
 
 ollama jalan di http://localhost:11434
 
-Jika menggunakan ollama offline dengan download otak dari website di atas maka perlu set di Environment Variables dan isi variable value = http://192.168.1.55:5173(Alamat AI) PC untuk mencegah blocked by CORS 
+Jika menggunakan ollama offline dengan download otak dari website di atas maka perlu set di Environment Variables dan isi variable name = OLLAMA_ORIGINS variable value = http://192.168.1.55:5173(Alamat AI) PC untuk mencegah blocked by CORS 
 
 npm install = untuk node modules
 
