@@ -7,6 +7,7 @@ import ollama from 'ollama/browser';
 
 const App = () => {
   const [ChatHistory, setChatHistory] = useState([]);
+  const [showChatbot, setShowChatbot] = useState(false);
   const chatBodyRef = useRef();
 
   useEffect(() => {
@@ -64,14 +65,19 @@ const App = () => {
   }
 
   return (
-    <div className="container">
+    <div className={`container ${showChatbot ? "show-chatbot" : ""}`}>
+      <button id="chatbot-toggler" onClick={() => setShowChatbot(prev => !prev)}>
+        <span className="material-symbols-outlined">mode_comment</span>
+        <span className="material-symbols-outlined">close</span>
+      </button>
+
       <div className="chatbot-popup">
         <div className="chat-header">
           <div className="header-info">
             <ChatbotIcon />
             <h2 className="logo-text">MAI (Offline)</h2>
           </div>
-          <button className="material-symbols-outlined">keyboard_arrow_down</button>
+          <button className="material-symbols-outlined" onClick={() => setShowChatbot(false)}>keyboard_arrow_down</button>
         </div>
 
         <div className="chat-body" ref={chatBodyRef}>
